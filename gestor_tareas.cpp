@@ -1,11 +1,19 @@
 #include <iostream>
 using namespace std;
 #define Salir 4
-int opcion=0;
 
-int main()
-{
+class tarea{
+    private:
+        string nombre, desc, estado;
+    public:
+        void Agregar(){}
+        void Listar(){}
+        void Editar(){}
+};
+
+int main(){
     cout<<"Bienvenido al Gestor de Tareas!!\n\n";
+    int opcion=0;
     while(opcion!=Salir){
         cout<<"--Seleccione una opción--\n";
         cout<<"1.Agregar Tarea\n";
@@ -15,24 +23,22 @@ int main()
         cin>>opcion;
         switch(opcion){
             case 1:
-            cout<<"Agregar Tarea\n\n";
-            break;
+                cout<<"Agregar Tarea\n\n";
+                break;
             case 2:
-            cout<<"Listar Tarea\n\n";
-            break;
+                cout<<"Listar Tarea\n\n";
+                break;
             case 3:
-            cout<<"Editar Tarea\n\n";
-            break;
+                cout<<"Editar Tarea\n\n";
+                break;
             case 4:
-            cout<<"¡Hasta pronto!";
-            break;
+                cout<<"¡Hasta pronto!";
+                break;
             default:
-            cout<<"Por favor, introduzca una opción válida\n";
-            break;
+                cout<<"Por favor, introduzca una opción válida\n";
+                break;
         }
     }
 }
-void Agregar(){}
-void Listar(){}
-void Editar(){}
+
 
